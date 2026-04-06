@@ -1,0 +1,13 @@
+
+# Exempel ARRAY 2D ..............
+
+MATRIX_2D = [ [2,6,8],
+	  [4,5,9] ]
+
+X = len(MATRIX_2D)
+Y = len(MATRIX_2D[0])
+
+for i in range(X):
+	for j in range(Y):
+		print(MATRIX_2D[i][j] ,end=" ")
+	print()

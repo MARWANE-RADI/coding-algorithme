@@ -1,0 +1,12 @@
+
+class Cake :
+	def __init__(self,color):
+		self.color = color
+	def change_color(self,new_color):
+		self.color = new_color
+	
+cake1 = Cake("blue")
+cake2 = Cake("green")
+print(f"{cake1.color} and {cake2.color}")
+cake2.change_color("orange")
+print(f"{cake1.color} and {cake2.color}")

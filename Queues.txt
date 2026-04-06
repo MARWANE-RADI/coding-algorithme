@@ -1,0 +1,20 @@
+class Queue :
+	def __init(self):
+		self.Q = []
+	
+	def Enqueue(self,value):
+		self.Q.append(value)
+	
+	def Deqeue(self):
+		self.Q.pop(0)
+	
+	def Front(self):
+		return self.Q[0]
+	
+queue = Queue()
+queue.enqueue(5)
+queue.enqueue(50)
+queue.enqueue(45)
+queue.enqueue(10)
+print(queue.front())
+		

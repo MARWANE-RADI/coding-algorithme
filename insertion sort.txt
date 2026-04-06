@@ -1,0 +1,13 @@
+
+def insertion(arr):
+	n = len(arr)
+	for i in range(n):
+		j = i
+		while j > 0 and arr[j-1] > arr[j]:
+			arr[j-1] , arr[j] =arr[j] ,arr[j-1]
+			j = j - 1
+	#		print(arr)   becouse understande insertion
+
+arr =[2,10,82,1,36,4,52,2,8]
+insertion(arr)
+print(arr)

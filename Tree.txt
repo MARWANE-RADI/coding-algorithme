@@ -1,0 +1,46 @@
+
+
+class Biary_Tree :
+	def __init(self,value):
+		self.value = value
+		self.left = None
+		self.rigth = None
+# Recursion .............................................
+		
+def Pre_order(root):
+	if root == None:
+		return
+	print(root.value)
+	Pre_order(root.left)
+	Pre_order(root.rigth)
+#.........................................................
+	
+root  = Biary_Tree(3)
+node2 = Biary_Tree(4)
+node3 = Biary_Tree(5)
+node4 = Biary_Tree(6)
+node5 = Biary_Tree(7)
+node6 = Biary_Tree(8)
+node7 = Biary_Tree(9)
+node8 = Biary_Tree(10)
+node9 = Biary_Tree(11)
+node10 = Biary_Tree(12)
+node11 = Biary_Tree(13)
+
+# ROOT
+root.left  = node2
+root.rigth = node3
+
+# SubTree 2
+node2.left  = node4
+node2.rigth = node5
+node4.left  = node7
+node4.rigth = node8
+node5.left  = node9
+node5.rigth = node10
+# SubTree 1
+node3.rigth = node6
+node6.rigth = node11
+
+Pre_order(root)
+

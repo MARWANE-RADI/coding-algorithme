@@ -1,0 +1,34 @@
+
+
+class Biary_Tree :
+	def __init(self,value):
+		self.value = value
+		self.left = None
+		self.rigth = None
+
+node1 = Biary_Tree(3)
+node2 = Biary_Tree(4)
+node3 = Biary_Tree(5)
+node4 = Biary_Tree(6)
+node5 = Biary_Tree(7)
+node6 = Biary_Tree(8)
+node7 = Biary_Tree(9)
+node8 = Biary_Tree(10)
+node9 = Biary_Tree(11)
+node10 = Biary_Tree(12)
+node11 = Biary_Tree(13)
+
+# ROOT 
+node1.left  = node2
+node1.rigth = node3
+
+# SubTree 2
+node2.left  = node4
+node2.rigth = node5
+node4.left  = node7
+node4.rigth = node8
+node5.left  = node9
+node5.rigth = node10
+# SubTree 1 
+node3.rigth = node6
+node6.rigth = node11 

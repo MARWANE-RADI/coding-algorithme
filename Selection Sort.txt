@@ -1,0 +1,17 @@
+
+
+def selection_sort(list):
+	long = len(list)
+	for i in range(long):
+		index_min = i
+		for j in range(i,long):
+			if list[j] < list[index_min]:
+				index_min =j
+		list[index_min], list[i] = list[i] ,list[index_min]
+		
+
+L = [10,7,5,12,5,1,4,20,80,4,6,2,85,47,23,29,30,0.01,18]
+selection_sort(L)
+print(L)
+
+# printing...... n + (n - 1) + (n - 2) +.......2 + 1 = n * (n + 1)/ 2

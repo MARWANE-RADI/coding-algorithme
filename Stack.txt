@@ -1,0 +1,28 @@
+
+class Stack:
+	def __init__(self):
+		self.S = []
+		
+	def push(self,value):
+		self.S.append(value)
+	def pop(self,value):
+		if self.isEmpty ():
+			print("Erorr")
+		else :
+			self.S.pop()
+	
+	def isEmpty(self):
+		if len(self.S) == 0:
+			return True
+		else:
+			return False
+	def top(self):
+		return self.S[-1]
+	
+stack = Stack()
+stack.push(3)
+stack.push(2)
+stack.push(8)
+print(stack.top())
+stack.pop(8)
+print(stack.top())

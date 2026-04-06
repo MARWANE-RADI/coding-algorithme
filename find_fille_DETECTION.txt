@@ -1,0 +1,11 @@
+
+
+import os
+
+file_path = "data.csv"
+
+if os.path.exists(file_path):
+	print(f"The loation {file_path} exists")
+else :
+	print("That location doesn't exists")
+	
